@@ -57,7 +57,7 @@ class SimpleChatBot:
         return matrix[a_len][b_len]
 
 # CSV 파일 경로를 지정하세요.
-filepath = 'ChatbotData.csv'
+filepath = 'C:\\src\\python\\cuk\\ai_practice\\report2\\new_chatbot\\cuk_ai_practice\\ChatbotData.csv'
 
 # 간단한 챗봇 인스턴스를 생성합니다.
 chatbot = SimpleChatBot(filepath)
@@ -69,4 +69,12 @@ while True:
         break
     response = chatbot.find_best_answer(input_sentence)
     print('Chatbot:', response)
-    
+
+# 실행결과
+# You: 회사 퇴사해야지
+# Chatbot: 부지런하시네요.
+# You: 너도 퇴사해라
+# Chatbot: 저도 몰랐어요.
+# You: AI 개발 실무 과목 화이팅
+# Chatbot: 시간을 정해보세요.
+# You:
